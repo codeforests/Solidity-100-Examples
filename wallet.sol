@@ -14,8 +14,10 @@ contract EtherWallet {
         _;
     }
 
+    //for receiving ether
     receive() external payable {}
 
+    //only owner can withdraw fund
     function withdraw(uint _amount) public onlyOwner{
         require(_amount <= address(this).balance, "Insufficient balance!");
         (bool succ, ) = owner.call{value : _amount}("");

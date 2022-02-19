@@ -2,6 +2,10 @@
 
 pragma solidity ^0.8.0; 
 
+/**
+    re-entrancy attack exploits a contract function by calling it multiple times
+    where is supposed to be called only once.
+ */
 contract EtherPool {
 
     mapping(address => uint256) public balances;
@@ -32,6 +36,7 @@ contract AttackingContract {
         pool = EtherPool(_poolContract);
     }
 
+    //fallback is triggered when
     fallback() external payable {
         if(address(pool).balance >= 1 ether) {
             pool.withdraw();
@@ -50,8 +55,8 @@ contract AttackingContract {
 
 }
 
-// solution : 1) Updating balance to 0 first before function call 2) Implementing Re-Entrancy Guard
-// https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v4.5.0/contracts/security/ReentrancyGuard.sol
+// solution : 1) Updating balance to 0 first before function call 2) Implementing Re-Entrancy Guard modifier
+//e.g.: https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v4.5.0/contracts/security/ReentrancyGuard.sol
 
 contract ReEntrancyGuard {
 

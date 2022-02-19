@@ -15,10 +15,12 @@ The content of the repo will constantly be updated. please **star** it if you fi
   - [Function **modifier**](https://github.com/codeforests/Solidity-100-Examples/blob/master/Modifier.sol)
   - [Function **visibility**](https://github.com/codeforests/Solidity-100-Examples/blob/master/Visibility.sol)
   - [Different ways to write function **returns**](https://github.com/codeforests/Solidity-100-Examples/blob/master/Functions.sol)
+  - [Define your own data **struct**](https://github.com/codeforests/Solidity-100-Examples/blob/master/Struct.sol)
+  - [How to use **try catch**](https://github.com/codeforests/Solidity-100-Examples/blob/master/TryCatch.sol)
+  - [Implement a **wallet** contract for fund deposit](https://github.com/codeforests/Solidity-100-Examples/blob/master/wallet.sol)
   - To be continued
   
 ## 2. Advanced
-  - [Implement a **wallet** contract for fund deposit](https://github.com/codeforests/Solidity-100-Examples/blob/master/Advanced/wallet.sol)
   - [Perform **token swap** from one token to another](https://github.com/codeforests/Solidity-100-Examples/blob/master/Advanced/tokenswap.sol)
   - [Implement a **Multi-Sign wallet contract** to approve transaction before execution](https://github.com/codeforests/Solidity-100-Examples/blob/master/Advanced/multisigwallet.sol)
   - [Using **create2** to deploy contract with same address to multiple blockchain](https://github.com/codeforests/Solidity-100-Examples/blob/master/Advanced/create2.sol)

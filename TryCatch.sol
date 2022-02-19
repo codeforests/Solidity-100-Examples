@@ -6,6 +6,7 @@ contract Callee {
     
     address public owner;
 
+    //address cannot be 0 or 0x0000000000000000000000000000000000000001
     constructor(address _owner) {
         require(_owner != address(0), "invalid address");
         assert(_owner != 0x0000000000000000000000000000000000000001);
@@ -19,7 +20,7 @@ contract Callee {
 
 }
 
-contract Test {
+contract Caller {
 
     event Log(string message);
     event LogInt(uint n);

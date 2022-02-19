@@ -40,7 +40,10 @@ contract JackPot {
 }
 
 /*
-    the attacking contract uses selfdestuct function to send either
+    selfdestuct is designed for removing a unused/confusion contracts or 
+    stop loss when contract is under serious attack.
+
+    below attacking contract uses selfdestuct function to send either
     back to the pool contract without calling any of the functions in
     pool contract. This causes the balance of the pool contract reaches
     to the target amount without a winner. The fund will be locked forever.

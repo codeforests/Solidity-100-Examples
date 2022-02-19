@@ -6,6 +6,7 @@ import "./String.sol";
 
 contract Base {
 
+    //private function only can be called in current contract
     function privateFunc() private pure returns (string memory) {
         return "private function called";
     }
@@ -14,6 +15,7 @@ contract Base {
         return privateFunc();        
     }
 
+    //internal function only can be called in current contract or child contracts
     function internalFunc() internal pure returns (string memory) {
         return "internal function called";
     }
@@ -22,10 +24,12 @@ contract Base {
         return internalFunc();
     }
 
+    //public function only can be called internally or externally
     function publicFunc() public pure returns (string memory) {
         return "public function called";
     }
 
+    //public function only can be called externally
     function externalFunc() external pure returns (string memory) {
         return "external function called";
     }
@@ -36,8 +40,11 @@ contract Base {
         return x;
     }
 
+    //accessible by current contract
     string private privateVar = "this is private";
+    //accessible by all contracts
     string public publicVar = "this is public";
+    //accessible by current and child contracts
     string internal interalVar = "this is internal";
 
 }

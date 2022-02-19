@@ -10,10 +10,11 @@ The content of the repo will constantly be updated. please **star** it if you fi
   - [Using **Array** data type](https://github.com/codeforests/Solidity-100-Examples/blob/master/Array.sol)
   - [Declare **Enum** and use it in contract](https://github.com/codeforests/Solidity-100-Examples/blob/master/Enum.sol)
   - [Example of using **Mapping**](https://github.com/codeforests/Solidity-100-Examples/blob/master/Mapping.sol)
+  - [**Constant**](https://github.com/codeforests/Solidity-100-Examples/blob/master/Constant.sol) vs [**immutable**](https://github.com/codeforests/Solidity-100-Examples/blob/master/Immutable.sol)
   - [**If else** in control flow](https://github.com/codeforests/Solidity-100-Examples/blob/master/If.sol)
-  - [Function **Modifier**](https://github.com/codeforests/Solidity-100-Examples/blob/master/Modifier.sol)
+  - [Function **modifier**](https://github.com/codeforests/Solidity-100-Examples/blob/master/Modifier.sol)
   - [Function **visibility**](https://github.com/codeforests/Solidity-100-Examples/blob/master/Visibility.sol)
-  - [Different ways to write function **return**](https://github.com/codeforests/Solidity-100-Examples/blob/master/Functions.sol)
+  - [Different ways to write function **returns**](https://github.com/codeforests/Solidity-100-Examples/blob/master/Functions.sol)
   - To be continued
   
 ## 2. Advanced

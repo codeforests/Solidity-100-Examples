@@ -12,15 +12,18 @@ The content of the repo will constantly be updated. please **star** it if you fi
   - [Declare **Enum** and use it in contract](https://github.com/codeforests/Solidity-100-Examples/blob/master/Basic/Enum.sol)
   - [Example of using **Mapping**](https://github.com/codeforests/Solidity-100-Examples/blob/master/Basic/Mapping.sol)
   - [**Constant**](https://github.com/codeforests/Solidity-100-Examples/blob/master/Basic/Constant.sol) vs [**immutable**](https://github.com/codeforests/Solidity-100-Examples/blob/master/Basic/Immutable.sol)
+  - [Example of **hash** function](https://github.com/codeforests/Solidity-100-Examples/blob/master/Basic/Hash.sol)
   - [Contract constructor](https://github.com/codeforests/Solidity-100-Examples/blob/master/Basic/Variable.sol)
   - [**If else** in control flow](https://github.com/codeforests/Solidity-100-Examples/blob/master/Basic/If.sol)
   - [Function **modifier**](https://github.com/codeforests/Solidity-100-Examples/blob/master/Basic/Modifier.sol)
   - [Function **visibility**](https://github.com/codeforests/Solidity-100-Examples/blob/master/Basic/Visibility.sol)
   - [Different ways to write function **returns**](https://github.com/codeforests/Solidity-100-Examples/blob/master/Basic/Functions.sol)
   - [Define your own data **struct**](https://github.com/codeforests/Solidity-100-Examples/blob/master/Basic/Struct.sol)
-  - [When to use **revert**, **require** or **assert**](https://github.com/codeforests/Solidity-100-Examples/blob/master/Basic/Revert.sol)
+  - [When to use **revert**, **require** or **assert**](https://github.com/codeforests/Solidity-100-Examples/blob/master/Basic/ErrorHandling.sol)
   - [How to use **try catch**](https://github.com/codeforests/Solidity-100-Examples/blob/master/Basic/TryCatch.sol)
+  - [Use **interface** in contract](https://github.com/codeforests/Solidity-100-Examples/blob/master/Basic/Interface.sol)
   - [Implement a **wallet** contract for fund deposit](https://github.com/codeforests/Solidity-100-Examples/blob/master/Basic/wallet.sol)
+  
   - To be continued
   
 ## 2. Advanced

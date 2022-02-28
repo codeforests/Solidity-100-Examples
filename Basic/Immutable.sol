@@ -12,21 +12,27 @@ pragma solidity ^0.8.0;
 
 contract Immutable {
 
-    address public immutable MY_ADDRESS;
+    address private immutable original;
     uint public immutable MY_UINT;
     uint public immutable my_uint2 = 456;
     uint public constant my_uint3 =  456;
 
 
     constructor(uint _myUint) {
-        MY_ADDRESS = msg.sender;
+        //assign contract address to variable original
+        original = address(this);
         MY_UINT = _myUint;
     }
 
     function changeIt() public view {
         //shadows the immutable Variable
-        address MY_ADDRESS = 0xAb8483F64d9C6d1EcF9b849Ae677dD3315835cb2;
+        uint256 MY_UINT = 12;
 
+    }
+
+    //a method to prevent delegate calls 
+    function checkNotDelegateCall() private view {
+        require(address(this) == original);
     }
 
 }
